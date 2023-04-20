@@ -1,0 +1,68 @@
+/* inporting font family  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Removing number button from number input  */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"] {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield !important;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  background-color: #eee;
+}
+
+/* Main Container  */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: white;
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.085),
+    -3px -3px 15px rgba(0, 0, 0, 0.085);
+  align-items: flex-start;
+}
+
+.container input {
+  width: 250px;
+  height: 2rem;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+#btn-simulate {
+  margin-top: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#btn-simulate:hover {
+  background-color: black;
+  color: white;
+}
